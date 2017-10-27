@@ -1,0 +1,107 @@
+
+
+
+// Estilos de formularios
+
+
+input
+select
+textarea
+	display block
+	width 100%
+	border 1px solid $lightgray
+	padding 10px 15px
+	vertical-align top
+	background $white
+	box-sizing border-box
+	-webkit-appearance none
+	appearance none
+	border-radius $rad
+	&:focus
+		border-color $lightgray
+
+input[type='checkbox']
+input[type='radio']
+	display inline-block
+	width 20px
+	height 20px
+	padding 0
+	margin-right 2px
+	margin-top 2px
+	vertical-align -5px
+	position relative
+	overflow hidden
+	background-image url(../img/icon-checked.png)
+	background-position center -20px
+	background-repeat no-repeat
+	&:checked
+		background-color $color
+		border-color $color
+		background-position center center
+
+input[type='radio']
+	border-radius 15px
+
+select
+	background-image url(../img/icon-select.png)
+	background-position right center
+	background-repeat no-repeat
+	padding-right 40px
+	position relative
+
+textarea
+	height 100px
+	resize none
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance none
+	margin 0
+
+
+// Estilos para controles de formularios
+
+w_name = 160px
+w_value = 240px
+w_form = w_name + w_value
+
+.controls
+
+	&.controls-center
+		margin 0 auto
+		max-width w_form
+	
+	.control
+		display block
+		margin-bottom sep
+		position relative
+		&:last-child
+			margin-bottom 0
+
+		.control-name
+			padding-bottom 5px
+			transition .2s ease
+			overflow hidden
+
+			.control-message
+				display inline
+				font-weight bold
+				animation fadeIn .5s .1s ease backwards
+				
+		.control-value
+			position relative
+			label
+				display block
+				padding 5px
+				margin 0 5px 0 -5px
+				&.label-inline
+					display inline-block
+
+		&.control-error
+			.control-name
+				span
+					color $red
+
+

@@ -1,0 +1,84 @@
+
+
+.content
+	line-height 30px
+	>*
+		animation slideFadeUp .5s ease backwards
+		animation-stagger 10, .1s
+
+	p
+		color $gray
+
+	h1, h2, h3, h4,	p, ol, ul, table, blockquote, pre, iframe
+		margin-bottom sep
+		&:last-child
+			margin-bottom 0
+
+	h1, h2, h3, h4, h5
+		padding-top 20px
+		border-top 1px solid $lightgray
+		&:first-child
+			padding-top 0
+			border-top 0
+
+	ul
+		list-style-type disc
+	ol
+		list-style-type decimal
+	ol,ul
+		margin-left 20px
+		li
+			margin-bottom 5px
+
+	blockquote
+		padding 20px 40px
+		position relative
+		border 1px solid $light
+		border-width 1px 0
+		text-align center
+		&:before
+			content "\f10d"
+			font-family "FontAwesome"
+			position absolute
+			top 10px
+			left 10px
+			opacity .5
+			display inline-block
+			padding-right 2px
+		
+	pre
+		background rgba(0,0,0,.05)
+		padding 10px sep
+		overflow auto
+
+	img
+		// WP
+		&.alignright
+			@media $break-sm
+				float right
+				margin-left 20px
+		&.alignleft
+			@media $break-sm
+				float left
+				margin-right 20px
+		&.aligncenter
+			margin 0 auto
+
+
+	iframe
+		width 100%
+		max-width 100%
+		display block
+		height 200px
+		background $light
+		@media $break-sm
+			height 300px
+		@media $break-md
+			height 400px
+
+	a
+		text-decoration none
+		&:hover:not(.button)
+			text-decoration underline
+			
+

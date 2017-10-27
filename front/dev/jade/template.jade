@@ -1,0 +1,39 @@
+include includes/mixins
+include includes/articles
+include includes/sections
+//include includes/components
+
+doctype html
+html(lang="es")
+	head
+		title PGIC
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1")
+		link(href='css/main.css', rel='stylesheet', type='text/css')
+		script(src='js/main.js', type='text/javascript')
+
+		// Meta tags facebook
+		meta(property='og:title', content="")
+		meta(property='og:description', content="")
+		meta(property='og:image', content="")
+
+		// Meta tags twitter cards
+		meta(name='twitter:card', content="summary_large_image")
+		meta(name='twitter:title', content="")
+		meta(name='twitter:description', content="")
+		meta(name='twitter:image', content="")
+		
+		// Meta links
+		link(href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet")
+
+		// Gmap
+		script(src='http://maps.google.com/maps/api/js?libraries=places&key=AIzaSyCHwWuTVfZksOuH5W0TQA9e-jleK1M1j8Y')
+
+		//[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]
+
+	body
+		include includes/header
+		#sections
+			block page
+		include includes/footer
+	

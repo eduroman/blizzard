@@ -1,0 +1,51 @@
+
+.carousel
+
+
+	.carousel-thumbnails
+		.carousel-thumbnail
+			.bar
+				position absolute
+				top 0
+				left 0
+				width 0%
+				height 0px
+				background $color_2
+				transition .1s ease
+				display none
+			&:hover
+				cursor pointer
+			&.current
+				.bar
+					display block
+					height 4px
+
+	.carousel-contents
+		.carousel-content
+			display none
+			&.out
+				display block
+				animation fadeOut .2s ease both
+			&.current
+				display block
+				animation fadeIn .4s .2s ease backwards
+
+	.carousel-bgs
+		cover absolute
+		overflow hidden
+		.carousel-bg
+			cover absolute
+			display none
+			opacity .25
+			animation fadeIn .5s ease
+			.bg
+				animation scaleIn2 6s ease-out
+			&.current
+				display block
+			&.out
+				display block
+				animation fadeOut .2s ease both
+
+	.carousel-grad
+		cover absolute
+		grad(left,white)
