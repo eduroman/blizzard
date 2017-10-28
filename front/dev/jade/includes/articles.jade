@@ -1,0 +1,20 @@
+mixin articleSlide(index,title)
+	article.article-slide
+		.article-limit
+			.cols
+				.col-xs-12.col-sm-12.col-md-6
+					.article-body-va
+						.article-body
+							h2.h1.article-title=title
+							p.article-description: +lorem(20)
+							.article-link
+								a(href="product.html") Ver detalles
+				.col-xs-12.col-sm-12.col-md-6
+					.article-image
+						a(href="product.html")
+							img(src="img/slider/"+index+".png")
+mixin articleSlideThumb(index,title)
+	article.article-slide-thumb.dscroll
+		.bar
+		.article-image: img(src="img/slider/"+index+".png")
+		.article-title: span=title
