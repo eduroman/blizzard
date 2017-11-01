@@ -2,50 +2,107 @@ extends ../template.jade
 block page
 	section.section-slider
 		
-		.carousel
-
-			.carousel-bgs
-				.carousel-bg: .bg: img(src="img/backgrounds/1.jpg")
-				.carousel-bg: .bg: img(src="img/backgrounds/2.jpg")
-				.carousel-bg: .bg: img(src="img/backgrounds/3.jpg")
-				.carousel-bg: .bg: img(src="img/backgrounds/4.jpg")
-
-			.carousel-grad
-
-			.section-limit
-
-				.section-slider_slides
-					.carousel-contents
-						.carousel-content
-							+articleSlide(1,"Bomba centrifuga sanitaria")
-						.carousel-content
-							+articleSlide(2,"Bomba de superficie")
-						.carousel-content
-							+articleSlide(3,"Bomba centrifuga sanitaria")
-						.carousel-content
-							+articleSlide(4,"Motor sumergible")
-
-				.section-slider__thumbs
-					.carousel-thumbnails
-						.cols.cols-gutterx0
-							.col-md-3.col-lg-3.carousel-thumbnail
-								+articleSlideThumb(1,"Bomba centrifuga sanitaria")
-							.col-md-3.col-lg-3.carousel-thumbnail
-								+articleSlideThumb(2,"Bomba de superficie")
-							.col-md-3.col-lg-3.carousel-thumbnail
-								+articleSlideThumb(3,"Bomba centrifuga sanitaria")
-							.col-md-3.col-lg-3.carousel-thumbnail
-								+articleSlideThumb(4,"Motor sumergible")
-	
+		
 	section.section-games
 		.section-limit
 			a.section-link.fa Juegos
 			.section-games-list
-				.section-games-list-title
+				.section-games-list-title Blizzard
 				article.article-games
 					.article-games-img
 						img
 					.article-games-body
 						.article-bottom
-						.article-link.fa		
-						
+						.article-link.fa
+				article.article-games
+					.article-games-img
+						img
+					.article-games-body
+						.article-bottom
+						.article-link.fa
+				article.article-games
+					.article-games-img
+						img
+					.article-games-body
+						.article-bottom
+						.article-link.fa
+				article.article-games
+					.article-games-img
+						img
+					.article-games-body
+						.article-bottom
+						.article-link.fa							
+				.section-games-list-title Activison
+				article.article-games
+					.article-games-img
+						img
+					.article-games-body
+						.article-bottom
+						.article-link.fa
+
+
+			.section-games-other
+				h3.section-title Todos tus juegos en un mismo lugar:
+				a.section-link.fa Aplicación de escritorio Blizzard
+				a.section-link.fa Battle.net
+			.section-games-other
+				h3.section-title Mantén la conexion dondequiera que vayas:
+				a.section-link.fa Aplicación movil Blizzard
+				a.section-link.fa Battle.net
+
+
+	section.section-news
+		.section-news-histories
+			.section-limit
+				h3.section-title.fa Historias destacadas
+				article.article-history
+					.article-img
+						.bg
+							img
+					.article-body
+						span.article-subtitle Noticias
+						h3.article-title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						.article-button.btn
+				article.article-history.small
+					.article-img
+						.bg
+							img
+					.article-body
+						span.article-subtitle Noticias
+						h3.article-title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						.article-button.btn
+				article.article-history.small
+					.article-img
+						.bg
+							img
+					.article-body
+						span.article-subtitle Noticias
+						h3.article-title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						.article-button.btn
+				article.article-history.small
+					.article-img
+						.bg
+							img
+					.article-body
+						span.article-subtitle Noticias
+						h3.article-title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						.article-button.btn
+		.section-news-events
+			h3.section-title Proximos eventos
+			article.article-event
+				.article-body
+					.article-event-date  OCT. 26-30
+					.article-subtitle  Lorem ipsum.
+					.article-title.fa  Lorem ipsum dolor.
+			article.article-event
+				.article-body
+					.article-event-date  OCT. 26-30
+					.article-subtitle  Lorem ipsum.
+					.article-title.fa  Lorem ipsum dolor.
+
+	
+
+
+									
+
+							
